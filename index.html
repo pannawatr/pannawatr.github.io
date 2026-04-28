@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio — minimal, clean, focused." />
+  <title>Pannawat Rodpai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="logo">◆</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Pannawat Rodpai</h1>
+      <p class="lede">A <span class="accent">Ph.D Student</span> in Computer Engineering at Chiang Mai University, with a research focus on Urban Informatics.</p>
+      <div class="cta">
+        <a href="#work" class="btn primary">View work</a>
+        <a href="#contact" class="btn ghost">Get in touch →</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2><span class="num">01</span> About</h2>
+      <div class="about-grid">
+        <p>As a Ph.D. student in Computer Engineering, I design and develop digital solutions that merge technology with urban data, focusing on clarity, performance, and impactful user experiences.</p>
+        <ul class="skills">
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2><span class="num">02</span> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-year">Present</span>
+            <span class="timeline-badge">Current</span>
+          </div>
+          <h3>Ph.D. in Computer Engineering</h3>
+          <p class="timeline-place">Chiang Mai University, Thailand</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-year">2024</span>
+          </div>
+          <h3>M.Eng. in Computer Engineering</h3>
+          <p class="timeline-place">Chiang Mai University, Thailand</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-year">2021</span>
+          </div>
+          <h3>B.Eng. in Computer Engineering</h3>
+          <p class="timeline-place">Chiang Mai University, Thailand</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2><span class="num">03</span> Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="project-meta">
+            <span>2026</span>
+            <span>Python Package</span>
+          </div>
+          <h3>PyQuity</h3>
+          <p>A compact Python toolkit for building and analyzing multimodal street and transit networks with a focus on accessibility and distributive equity</p>
+          <div class="tags">
+          </div>
+          <a href="https://github.com/pannawatr/pyquity" class="project-link">View on GitHub →</a>
+        </article>
+
+        <article class="project">
+          <div class="project-meta">
+            <span>2025</span>
+            <span>Journal</span>
+          </div>
+          <h3>Evaluating the accessibility impact of integrated micromobility and transit systems: a case study of Calgary, Canada</h3>
+          <p>Public Transport</p>
+          <div class="tags">
+          </div>
+          <a href="https://doi.org/10.1007/s12469-025-00400-2" class="project-link">View Paper →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2><span class="num">04</span> Contact</h2>
+      <p class="contact-lede">
+        Have something in mind? I'm open to freelance work and collaboration.
+      </p>
+      <a class="email" href="mailto:pannawatr@outlook.com">pannawatr@outlook.com</a>
+      <ul class="socials">
+        <li><a href="https://github.com/pannawatr" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/pannawatr" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; <span id="year"></span> Pannawat Rodpai</span>
+    <span></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
