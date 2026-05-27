@@ -1,10 +1,6 @@
 const root = document.documentElement;
 const toggle = document.getElementById("theme-toggle");
 
-const stored = localStorage.getItem("theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-root.classList.toggle("dark", stored ? stored === "dark" : prefersDark);
-
 toggle.addEventListener("click", () => {
   const isDark = root.classList.toggle("dark");
   localStorage.setItem("theme", isDark ? "dark" : "light");
