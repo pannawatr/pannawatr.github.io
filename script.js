@@ -3,12 +3,11 @@ const toggle = document.getElementById("theme-toggle");
 
 const stored = localStorage.getItem("theme");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-root.dataset.theme = stored ?? (prefersDark ? "dark" : "light");
+root.classList.toggle("dark", stored ? stored === "dark" : prefersDark);
 
 toggle.addEventListener("click", () => {
-  const next = root.dataset.theme === "dark" ? "light" : "dark";
-  root.dataset.theme = next;
-  localStorage.setItem("theme", next);
+  const isDark = root.classList.toggle("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
